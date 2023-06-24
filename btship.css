@@ -1,0 +1,270 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.btsh-body {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: dodgerblue;
+}
+    .btsh-shad-1 {
+        width: 1000px;
+        height: 95%;
+        border-radius: 50px;
+        background-color: rgb(93, 135, 212);
+        box-shadow: -8px -8px 16px 1px rgba(255,255,255,0.5);
+    }
+        .btsh-shad-2 {
+            width: 100%;
+            height: 100%;
+            background-color: inherit;
+            border-radius: 50px;
+            border: 17px solid aliceblue;
+            box-shadow: 8px 8px 16px 1px rgba(0,0,0,0.5);
+        }
+        .btsh-header {
+            width: 100%;
+            height: 10%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(0,0,0,0.0);
+            color: rgb(255,255,255);
+            font-size: 160%;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            text-shadow: 0px 0px 3px #000;
+            border: 0px solid crimson;
+        }
+            .btsh-header > sup {
+                font-size: 40%;
+                margin-left: 5px;
+                margin-bottom: 10px;
+            }
+        .btsh-content {
+            width: 100%;
+            height: 80%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(136, 178, 255);
+            border: 0px solid crimson;
+        }
+            .btsh-battleField {
+                width: 70%;
+                height: 90%;
+                background-color: rgb(110, 152, 229);   /*cornflowerblue*/
+                border: 6px solid #333;
+            }
+                .btsh-battleField-none {
+                    width: 10%;
+                    height: 10%;
+                    float: left;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: rgb(84, 124, 197);
+                    color: white;
+                    font-size: 200%;
+                    font-weight: 500;
+                    text-shadow: 0px 0px 3px #000;
+                    border-color: #333;
+                    border-style: solid;
+                    border-width: 0px 3px 3px 0px;
+                }
+                .btsh-battleField-horizontalNumGroup {
+                    width: 90%;
+                    height: 10%;
+                    float: left;
+                    display: grid;
+                    grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
+                    background-color: inherit;
+                    border: 0px solid mediumpurple;
+                }
+                    .btsh-battleField-horizontalNumBlock {
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: rgb(84, 124, 197);
+                        color: white;
+                        font-size: 125%;
+                        font-weight: 600;
+                        text-shadow: 0px 0px 3px #000;
+                        border-color: #333;
+                        border-style: solid;
+                        border-width: 0px 0px 3px 0px;
+                        /*border: 0px solid mediumpurple;*/
+                    }
+                .btsh-battleField-verticalNumGroup {
+                    width: 10%;
+                    height: 90%;
+                    float: left;
+                    display: grid;
+                    grid-template-columns: auto;
+                    background-color: inherit;
+                    border: 0px solid mediumpurple;
+                }
+                    .btsh-battleField-verticalNumBlock {
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: rgb(84, 124, 197);
+                        color: white;
+                        font-size: 125%;
+                        font-weight: 600;
+                        text-shadow: 0px 0px 3px #000;
+                        border-color: #333;
+                        border-style: solid;
+                        border-width: 0px 3px 0px 0px;
+                        /*border: 0px solid mediumpurple;*/
+                    }
+                .btsh-battleField-areaGroup {
+                    width: 90%;
+                    height: 90%;
+                    float: left;
+                    display: grid;
+                    grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
+                    background-color: inherit;
+                }
+                    .btsh-battleField-areaBlock {
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: lightskyblue;
+                        border: 0px solid mediumpurple;
+                    }
+                    .btsh-battleField-areaBlock:nth-child(3n + 0) {
+                        background-color: lightskyblue;
+                    }
+                    .btsh-battleField-areaBlock:nth-child(3n + 1) {
+                        background-color: rgb(130, 196, 237);
+                    }
+                    .btsh-battleField-areaBlock:nth-child(3n + 2) {
+                        background-color: rgb(119, 184, 225);
+                    }
+                    .btsh-battleField-areaBlock-ship {
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: rgb(90, 90, 90);
+                        border: 0px solid mediumpurple;
+                    }
+                    .ship-style-1 {
+                        background-color: rgb(96, 172, 45);
+                    }
+                    
+                    .ship-style-2 {
+                        background-color: rgb(96, 172, 45);
+                    }
+                    
+                    .ship-style-3 {
+                        background-color: rgb(45, 71, 172);
+                        position: relative;
+                        z-index: 2;
+                    }
+                    
+                    .ship-style-4 {
+                        background-color: rgb(45, 71, 172);
+                        position: relative;
+                        z-index: 2;
+                    }
+                    
+                    .ship-style-5 {
+                        background-color: rgb(172, 45, 113);
+                        position: relative;
+                        z-index: 4;
+                    }
+                    
+                    .ship-style-6 {
+                        background-color: rgb(172, 45, 113);
+                        position: relative;
+                        z-index: 4;
+                    }
+                    .btsh-battleField-areaBlock-ship-sunken {
+                        width: 100%;
+                        height: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background-color: rgb(221, 46, 46);
+                        border: 0px solid mediumpurple;
+                    }
+        .btsh-footer {
+            width: 100%;
+            height: 10%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(0,0,0,0.0);
+            border: 0px solid crimson;
+        }
+            .btsh-footer-text {
+                width: auto;
+                height: auto;
+                margin-right: 8px;
+                color: rgb(255,255,255);
+                font-size: 160%;
+                font-weight: 600;
+                text-transform: uppercase;
+                letter-spacing: 1.5px;
+                text-shadow: 0px 0px 3px #000;
+            }
+            .btsh-footer-text::after {
+                content: ': ';
+            }
+        .btsh-footer-textInput {
+            height: 30px;
+            width: 41px;
+            text-align: center;
+            margin-right: 11px;
+            background-color: white;
+            font-size: 110%;
+            font-weight: 600;
+            border: none;
+            outline: none;
+        }
+            .btsh-footer-textInput::placeholder {
+                width: 4px;
+            }
+        .btsh-footer-buttonInput {
+            height: 30px;
+            width: 120px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            font-size: 110%;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition-duration: 0.2s;
+        }
+        .btsh-footer-buttonInput::selection {
+            background-color: rgba(0,0,0,0.0);
+            text-shadow: inherit;
+        }
+        .btsh-footer-buttonInput:hover {
+            cursor: crosshair;
+            background-color: #eeeeee;
+            transition-duration: 0.2s;
+        }
+        .btsh-footer-buttonInput:active {
+            background-color: crimson;
+            transition-duration: 0s;
+        }
